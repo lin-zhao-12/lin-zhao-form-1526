@@ -1,0 +1,122 @@
+/*
+color: #DDD
+
+       #F5F5F5
+
+       #6495ED
+font: Arial, Helvetica, Helvetica Neue, sans-serif
+*/
+
+h1 {
+    font-size: 1.3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    border: 2px solid #DDD;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    font-weight: 500;
+    position:absolute;
+    z-index: 999;
+    top: 5%;
+    left: 12%;
+}
+
+form {
+    
+    position: relative;
+    padding:4rem 2rem 3rem 2rem;
+    font-size: 1rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color:  #F5F5F5;
+    max-width: 70%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    border: 2px solid #DDD;
+    color:black;
+    border-radius: 4px;
+
+
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #DDD;
+    margin-top: 2px;
+    border-radius: 2px;
+    
+}
+
+#submit-button {
+    background-color: #6495ED;
+    color: white;
+    text-align: center;
+    border:none;
+    font-size: 1rem;
+}
+/**********responsive query***********/
+/*media query*/
+/***tablet phone up to 25rem****/
+@media only screen and (min-width:25rem) {
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        top: -1%;
+    left: 12%;
+   
+    }
+
+    form {
+        font-size: 2rem;
+        line-height:3rem;
+        
+    }
+    form input{display: inline-block;}
+
+    .personal-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .input-box {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .personal-info input {
+
+        height: 35px;
+        width: 100%;
+    }
+
+    #submit-button {
+        width: 12rem;
+        font-size: 2rem;
+        padding: 10px 40px 10px 40px;
+    }
+    
+    /***desktop under 50rem****/
+    @media only screen and (min-width:40rem){
+        h1{
+            left: 5%;
+            
+        }
+    form{
+        max-width:50rem;
+    }
+}
+
+@media only screen and (min-width:960px){
+    h1{
+    left:18%;}
+}
+
+
+}
